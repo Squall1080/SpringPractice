@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:c="http://www.springframework.org/schema/c"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	<!-- default ID is com.spring.soundsys.BlackAlbum#0 -->
+	<!-- #0 es una numeración para identificar el bean entre otros del mismo tipo -->
+	<!-- Otro bean del mismo tipo seria: com.spring.soundsys.BlackAlbum#1 -->
+	
+    <!-- bean id = "compactDisc" class="com.spring.soundsys.BlackAlbum"/--> <!-- class used to create the bean -->
+    
+    <bean id="cdPlayer" class="com.spring.soundsys.CDPlayer">
+    	<constructor-arg ref = "compactDisc"/>
+    </bean>
+    
+    <!-- Bean declared with c-namespace -->
+    
+    <!--bean id="cdPlayer" class="com.spring.soundsys.CDPlayer" c:cd-ref="compactDisc"/-->
+    <!-- Other options to declare a bean, refers to parameter position on parameters list-->
+    <!-- declare index-->
+    <!--bean id="cdPlayer" class="com.spring.soundsys.CDPlayer" c:_0-ref="compactDisc"/-->
+    <!-- no declare any name at all (because its just one constructor) -->
+    <!--  bean id="cdPlayer" class="com.spring.soundsys.CDPlayer" c:_-ref="compactDisc"/-->
+    
+    <bean id="compactDisc" class="com.spring.soundsys.BlankDisc">
+    	<constructor-arg value = "El Camino"/>
+    	<constructor-arg value = "The Black Keys"/>
+    </bean>
+    
+    <!-- bean id="compactDisc"
+		class="soundsystem.BlankDisc"
+		c:_title="Sgt. Pepper's Lonely Hearts Club Band"
+		c:_artist="The Beatles" / -->
+		
+		<!--bean id="compactDisc"
+			class="soundsystem.BlankDisc"
+			c:_0="Sgt. Pepper's Lonely Hearts Club Band"
+			c:_1="The Beatles" /-->
+
+</beans>
