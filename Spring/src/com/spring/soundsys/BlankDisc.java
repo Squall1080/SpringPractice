@@ -1,7 +1,7 @@
 package com.spring.soundsys;
 
 import org.springframework.stereotype.Component;
-
+@Component("BlankDisc")
 public class BlankDisc implements CompactDisc {
 	String title;
 	String artist;

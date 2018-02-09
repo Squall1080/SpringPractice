@@ -24,8 +24,8 @@ public class CDPlayerTest {
 	public final SystemOutRule systemOutRule = new SystemOutRule().enableLog();
 	
 	//nota que se instancian solo las interfaces.
-	//@Autowired
-	//private MediaPlayer player;
+	@Autowired
+	private MediaPlayer player;
 	
 	@Autowired
 	private CompactDisc cd;
@@ -36,12 +36,12 @@ public class CDPlayerTest {
 		cd.play();
 	}
 	
-	/*@Test
+	@Test
 	public void play(){
 		player.play();
 		//deprecated
 		//assertEquals("Now playing Black Album by Metallica", log.getLog());
 		//linux uses \n, on windows is \r\n
-		assertEquals("Now playing Black Album by Metallica\r\n", systemOutRule.getLog());
-	}*/
+		assertEquals("Now playing El Camino by The Black Keys\r\n", systemOutRule.getLog());
+	}
 }
