@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
 	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="src" path="Ch2"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
 	<classpathentry kind="lib" path="C:/Users/Admin/Documents/jars/Spring/spring-framework-4.3.14.RELEASE-dist/spring-framework-4.3.14.RELEASE/libs/spring-core-4.3.14.RELEASE.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Admin/Documents/jars/Spring/spring-framework-4.3.14.RELEASE-dist/spring-framework-4.3.14.RELEASE/libs/spring-test-4.3.14.RELEASE.jar"/>
@@ -11,5 +10,6 @@
 	<classpathentry kind="lib" path="C:/Users/Admin/Documents/jars/apacheCommons/commons-logging-1.2-bin/commons-logging-1.2/commons-logging-1.2.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Admin/Documents/jars/Spring/spring-framework-4.3.14.RELEASE-dist/spring-framework-4.3.14.RELEASE/libs/spring-aop-4.3.14.RELEASE.jar"/>
 	<classpathentry kind="lib" path="C:/Users/Admin/Documents/jars/Spring/spring-framework-4.3.14.RELEASE-dist/spring-framework-4.3.14.RELEASE/libs/spring-expression-4.3.14.RELEASE.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Admin/Documents/jars/junit/system-rules-1.16.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
